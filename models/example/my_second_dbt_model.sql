@@ -3,6 +3,6 @@
 
 select
   id as id,
-  sysdatetime as last_updated
+  current_time as last_updated
 from {{ ref('my_first_dbt_model') }}
 where id = 1
